@@ -3,12 +3,12 @@
 def move(no: int, x: int, y: int) -> None:
     """원반을 no개를 x 기둥에서 y 기둥으로 옮김"""
     if no > 1:
-        move(no - 1, x, 6 - x - y)
+        move(no - 1, x, 6 - x - y) #a에서 b로
 
     print(f'원반 [{no}]을(를) {x}기둥에서 {y}기둥으로 옮깁니다.')
 
     if no > 1:
-        move(no - 1, 6 - x - y, y)
+        move(no - 1, 6 - x - y, y) #b에서 c로
 
 print('하노이의 탑을 구현하는 프로그램입니다.')
 n = int(input('원반의 개수를 입력하세요.: '))
